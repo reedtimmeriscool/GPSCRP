@@ -440,7 +440,6 @@ io.on("connection",(socket)=>{
         updateEveryone();
 
     });
-
     socket.on(
     "disconnect",
     ()=>{
@@ -455,9 +454,6 @@ io.on("connection",(socket)=>{
 
 });
 
-
-
-()=>{
 const PORT =
 process.env.PORT || 3000;
 
@@ -465,9 +461,9 @@ server.listen(
 PORT,
 ()=>{
 
-console.log(
-"GPSCR running on port " +
-PORT
-);
+    console.log(
+    "GPSCR running on port " +
+    PORT
+    );
 
 });
